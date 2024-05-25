@@ -8,8 +8,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class Database extends SQLiteOpenHelper {
-private static final String DATABASE_NAME = "user_db";
-private static final String TABLE_NAME = "user_table";
+private static final String DATABASE_NAME = "APP_db";
+private static final String TABLE_NAME = "Users";
 private static final String COL_ID = "id";
 private static final String COL_NAME = "name";
 private static final String COL_AGE = "age";
@@ -25,7 +25,7 @@ public void onCreate(SQLiteDatabase db) {
         String createTableQuery = "CREATE TABLE " + TABLE_NAME + " (" +
         COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
         COL_NAME + " TEXT NOT NULL, "  +
-        COL_AGE + " INTEGER check (COL_AGE>=16), " +
+        COL_AGE + " INTEGER check ("+COL_AGE+">=16), " +
         COL_ADDRESS + " TEXT, " +
         COL_PASSWORD + " TEXT NOT NULL)";
         db.execSQL(createTableQuery);
