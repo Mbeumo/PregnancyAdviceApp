@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PrincipalActivity"
+            android:name=".Splashscreen"
             android:exported="true"
             android:label="@string/app_name">
         </activity>

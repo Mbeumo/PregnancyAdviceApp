@@ -5,8 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/teal_200">
-
-
     <TextView
         android:id="@+id/textView10"
         android:layout_width="382dp"
@@ -23,13 +21,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="406dp"
-        android:layout_height="715dp"
+        android:layout_width="372dp"
+        android:layout_height="661dp"
+        android:layout_marginTop="88dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.616"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@mipmap/ic_splashscreen" />
 </androidx.constraintlayout.widget.ConstraintLayout>
